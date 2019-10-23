@@ -1,0 +1,6 @@
+C:\LocalGit\sbweb\sbweb\sbweb.Models\bin\Debug\sbweb.Models.dll
+C:\LocalGit\sbweb\sbweb\sbweb.Models\bin\Debug\sbweb.Models.pdb
+C:\LocalGit\sbweb\sbweb\sbweb.Models\obj\Debug\sbweb.Models.csprojAssemblyReference.cache
+C:\LocalGit\sbweb\sbweb\sbweb.Models\obj\Debug\sbweb.Models.csproj.CoreCompileInputs.cache
+C:\LocalGit\sbweb\sbweb\sbweb.Models\obj\Debug\sbweb.Models.dll
+C:\LocalGit\sbweb\sbweb\sbweb.Models\obj\Debug\sbweb.Models.pdb
