@@ -1,5 +1,0 @@
-C:\LocalGit\sbweb\sbweb\Service\bin\Debug\Service.dll
-C:\LocalGit\sbweb\sbweb\Service\bin\Debug\Service.pdb
-C:\LocalGit\sbweb\sbweb\Service\obj\Debug\Service.csproj.CoreCompileInputs.cache
-C:\LocalGit\sbweb\sbweb\Service\obj\Debug\Service.dll
-C:\LocalGit\sbweb\sbweb\Service\obj\Debug\Service.pdb

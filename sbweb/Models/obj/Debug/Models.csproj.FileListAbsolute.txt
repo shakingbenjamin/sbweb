@@ -1,5 +1,0 @@
-C:\LocalGit\sbweb\sbweb\Models\bin\Debug\Models.dll
-C:\LocalGit\sbweb\sbweb\Models\bin\Debug\Models.pdb
-C:\LocalGit\sbweb\sbweb\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
-C:\LocalGit\sbweb\sbweb\Models\obj\Debug\Models.dll
-C:\LocalGit\sbweb\sbweb\Models\obj\Debug\Models.pdb
