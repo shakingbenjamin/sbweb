@@ -1,0 +1,166 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bootstrap Blog - B4 Template by Bootstrap Temple</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="~/Assets/vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="~/Assets/vendor/font-awesome/css/font-awesome.min.css">
+    <!-- Custom icon font-->
+    <link rel="stylesheet" href="~/Assets/css/fontastic.css">
+    <!-- Google fonts - Open Sans-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <!-- Fancybox-->
+    <link rel="stylesheet" href="~/Assets/vendor/fancyapps/fancybox/jquery.fancybox.min.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="~/Assets/css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="~/Assets/css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="favicon.png">
+    <!-- Tweaks for older IEs-->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+
+<body>
+    @{
+        Html.RenderAction("RenderNavigation", "SharedSurface");
+    }
+    <!-- Hero Section-->
+    @{
+        Html.RenderAction("RenderHeroBanner", "SharedSurface");
+    }
+    <!-- main body -->
+    @RenderBody()
+
+    <!-- Intro Section-->
+    @*<section class="intro">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h2 class="h3">Some great intro here</h2>
+                        <p class="text-big">Place a nice <strong>introduction</strong> here <strong>to catch reader's attention</strong>. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderi.</p>
+                    </div>
+                </div>
+            </div>
+        </section>*@
+    <!-- posts section -->
+    <!-- Divider Section-->
+    @*<section style="background: url(img/divider-bg.jpg); background-size: cover; background-position: center bottom" class="divider">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</h2><a href="#" class="hero-link">View More</a>
+                    </div>
+                </div>
+            </div>
+        </section>*@
+    <!-- Latest Posts -->
+    @*<section class="latest-posts">
+            <div class="container">
+                <header>
+                    <h2>Latest from the blog</h2>
+                    <p class="text-big">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </header>
+                <div class="row">
+                    <div class="post col-md-4">
+                        <div class="post-thumbnail"><a href="post.html"><img src="img/blog-1.jpg" alt="..." class="img-fluid"></a></div>
+                        <div class="post-details">
+                            <div class="post-meta d-flex justify-content-between">
+                                <div class="date">20 May | 2016</div>
+                                <div class="category"><a href="#">Business</a></div>
+                            </div><a href="post.html">
+                                <h3 class="h4">Ways to remember your important ideas</h3>
+                            </a>
+                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                        </div>
+                    </div>
+                    <div class="post col-md-4">
+                        <div class="post-thumbnail"><a href="post.html"><img src="img/blog-2.jpg" alt="..." class="img-fluid"></a></div>
+                        <div class="post-details">
+                            <div class="post-meta d-flex justify-content-between">
+                                <div class="date">20 May | 2016</div>
+                                <div class="category"><a href="#">Technology</a></div>
+                            </div><a href="post.html">
+                                <h3 class="h4">Diversity in Engineering: Effect on Questions</h3>
+                            </a>
+                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                        </div>
+                    </div>
+                    <div class="post col-md-4">
+                        <div class="post-thumbnail"><a href="post.html"><img src="img/blog-3.jpg" alt="..." class="img-fluid"></a></div>
+                        <div class="post-details">
+                            <div class="post-meta d-flex justify-content-between">
+                                <div class="date">20 May | 2016</div>
+                                <div class="category"><a href="#">Financial</a></div>
+                            </div><a href="post.html">
+                                <h3 class="h4">Alberto Savoia Can Teach You About Interior</h3>
+                            </a>
+                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>*@
+    <!-- Gallery Section-->
+    @*<section class="gallery no-padding">
+            <div class="row">
+                <div class="mix col-lg-3 col-md-3 col-sm-6">
+                    <div class="item">
+                        <a href="img/gallery-1.jpg" data-fancybox="gallery" class="image">
+                            <img src="img/gallery-1.jpg" alt="..." class="img-fluid">
+                            <div class="overlay d-flex align-items-center justify-content-center"><i class="icon-search"></i></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="mix col-lg-3 col-md-3 col-sm-6">
+                    <div class="item">
+                        <a href="img/gallery-2.jpg" data-fancybox="gallery" class="image">
+                            <img src="img/gallery-2.jpg" alt="..." class="img-fluid">
+                            <div class="overlay d-flex align-items-center justify-content-center"><i class="icon-search"></i></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="mix col-lg-3 col-md-3 col-sm-6">
+                    <div class="item">
+                        <a href="img/gallery-3.jpg" data-fancybox="gallery" class="image">
+                            <img src="img/gallery-3.jpg" alt="..." class="img-fluid">
+                            <div class="overlay d-flex align-items-center justify-content-center"><i class="icon-search"></i></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="mix col-lg-3 col-md-3 col-sm-6">
+                    <div class="item">
+                        <a href="img/gallery-4.jpg" data-fancybox="gallery" class="image">
+                            <img src="img/gallery-4.jpg" alt="..." class="img-fluid">
+                            <div class="overlay d-flex align-items-center justify-content-center"><i class="icon-search"></i></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>*@
+    <!-- Page Footer-->
+    @{
+        Html.RenderAction("RenderFooter", "SharedSurface");
+    }
+    <!-- JavaScript files-->
+    <script src="~/Assets/vendor/jquery/jquery.min.js"></script>
+    <script src="~/Assets/vendor/popper.js/umd/popper.min.js"></script>
+    <script src="~/Assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/Assets/vendor/jquery.cookie/jquery.cookie.js"></script>
+    <script src="vendor/fancyapps/fancybox/jquery.fancybox.min.js"></script>
+    <script src="~/Assets/js/front.js"></script>
+</body>
+</html>

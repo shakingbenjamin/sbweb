@@ -1,6 +1,0 @@
-C:\LocalGit\sbweb\sbweb\sbweb.Service\bin\Debug\sbweb.Service.dll
-C:\LocalGit\sbweb\sbweb\sbweb.Service\bin\Debug\sbweb.Service.pdb
-C:\LocalGit\sbweb\sbweb\sbweb.Service\obj\Debug\sbweb.Service.csprojAssemblyReference.cache
-C:\LocalGit\sbweb\sbweb\sbweb.Service\obj\Debug\sbweb.Service.csproj.CoreCompileInputs.cache
-C:\LocalGit\sbweb\sbweb\sbweb.Service\obj\Debug\sbweb.Service.dll
-C:\LocalGit\sbweb\sbweb\sbweb.Service\obj\Debug\sbweb.Service.pdb

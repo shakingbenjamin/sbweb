@@ -3,11 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sbweb.Umbraco", "sbweb.Umbraco\sbweb.Umbraco.csproj", "{1F24A91C-9DCA-477D-B4BE-520E150882B0}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sbweb.Service", "sbweb.Service\sbweb.Service.csproj", "{771CED94-5071-4660-9ACA-67B209B13C83}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sbweb.Models", "sbweb.Models\sbweb.Models.csproj", "{2A0A5B89-9042-47D4-821A-BC58E0925B7D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "sbweb.Umbraco\Web.csproj", "{1F24A91C-9DCA-477D-B4BE-520E150882B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +15,6 @@ Global
 		{1F24A91C-9DCA-477D-B4BE-520E150882B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F24A91C-9DCA-477D-B4BE-520E150882B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F24A91C-9DCA-477D-B4BE-520E150882B0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{771CED94-5071-4660-9ACA-67B209B13C83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{771CED94-5071-4660-9ACA-67B209B13C83}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{771CED94-5071-4660-9ACA-67B209B13C83}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{771CED94-5071-4660-9ACA-67B209B13C83}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2A0A5B89-9042-47D4-821A-BC58E0925B7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2A0A5B89-9042-47D4-821A-BC58E0925B7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2A0A5B89-9042-47D4-821A-BC58E0925B7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2A0A5B89-9042-47D4-821A-BC58E0925B7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

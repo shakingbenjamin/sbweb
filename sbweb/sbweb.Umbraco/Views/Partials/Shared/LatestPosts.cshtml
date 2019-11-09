@@ -1,0 +1,55 @@
+﻿@model  List<sbweb.Umbraco.Models.ViewModels.ArticleViewModel>
+
+
+@*<section class="featured-posts no-padding-top">
+        <div class="container">
+             Posts
+            @foreach (var a in Model)
+            {
+                <div class="row d-flex align-items-stretch">
+                    <div class="text col-lg-7">
+                        <div class="text-inner d-flex align-items-center">
+                            <div class="content">
+                                <header class="post-header">
+                                    <div class="category">
+                                        <a href="@a.CategoryUrl">@a.Category</a>
+                                    </div>
+                                    <a href="@a.ArticleUrl">
+                                        <h2 class="h4">@a.Header</h2>
+                                    </a>
+                                </header>
+                                <p>@a.ShortDescription</p>
+                                <footer class="post-footer d-flex align-items-center">
+                                    <div class="author d-flex align-items-center flex-wrap">
+                                        <div class="title"><span>@a.Author</span></div>
+                                    </div>
+                                    <div class="date"><i class="icon-clock"></i>@a.PublishedDate</div>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image col-lg-5"><img src="@a.Image" alt="@a.Header"></div>
+                </div>
+            }
+
+        </div>
+    </section>*@
+
+
+<div class="row">
+    @foreach (var a in Model)
+    {
+        <div class="post col-md-4">
+            <div class="post-thumbnail"><a href="@a.ArticleUrl"><img src="@a.Image" alt="..." class="img-fluid"></a></div>
+            <div class="post-details">
+                <div class="post-meta d-flex justify-content-between">
+                    <div class="date">@a.PublishedDate</div>
+                    <div class="category"><a href="@a.CategoryUrl">@a.Category</a></div>
+                </div><a href="@a.ArticleUrl">
+                    <h3 class="h4">@a.Header</h3>
+                </a>
+                <p class="text-muted">@a.ShortDescription</p>
+            </div>
+        </div>
+    }
+</div>

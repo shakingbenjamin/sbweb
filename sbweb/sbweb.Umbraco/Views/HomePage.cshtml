@@ -1,0 +1,15 @@
+﻿@using Web.Models.ContentModels
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<HomePage>
+@{
+    Layout = "Layout.cshtml";
+}
+<!-- latest blog posts -->
+<section class="latest-posts">
+    <div class="container">
+        <header>
+            <h2>Latest from the blog</h2>
+            <p class="text-big">Most recent posts from across the blogs.</p>
+        </header>
+        @{ Html.RenderAction("RenderLatestPosts", "SharedSurface");}
+    </div>
+</section>
