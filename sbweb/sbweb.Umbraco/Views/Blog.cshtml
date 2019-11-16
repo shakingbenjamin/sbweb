@@ -1,5 +1,18 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.Blog>
-@using ContentModels = Web.Models.ContentModels;
+﻿@using Web.Models.ContentModels
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<Blog>
 @{
-	Layout = null;
+    Layout = "Layout.cshtml";
 }
+<section class="intro">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <h2 class="h3">@Model.PageTitle</h2>
+                <p class="text-big">
+                    @Model.Introduction
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+@{ Html.RenderAction("RenderBlogPostsByCategory", "SharedSurface");}

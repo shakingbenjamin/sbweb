@@ -6,7 +6,9 @@
 
     public interface ISharedService
     {
-        List<ArticleViewModel> GetLatestBlogPosts(IPublishedContent content);
+        List<NavigationMenuViewModel> GetMenuItems(IPublishedContent content);
+        LatestBlogViewModel GetLatestBlogPosts(IPublishedContent content);
         HeroBannerViewModel GetHeroBanner(IPublishedContent content);
+        List<ArticleViewModel> GetBlogPostsByCategory(IPublishedContent content);
     }
 }

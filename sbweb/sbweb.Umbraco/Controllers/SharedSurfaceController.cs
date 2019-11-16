@@ -15,7 +15,8 @@ namespace sbweb.Umbraco.Controllers
 
         public ActionResult RenderNavigation()
         {
-            return PartialView("~/Views/Partials/Shared/Navigation.cshtml");
+            var menu = this._sharedService.GetMenuItems(this.CurrentPage);
+            return PartialView("~/Views/Partials/Shared/Navigation.cshtml", menu);
         }
 
         public ActionResult RenderHeroBanner()
@@ -29,6 +30,12 @@ namespace sbweb.Umbraco.Controllers
             // create sservice to sift through the latest posts from all three blogs
             var latestBlogPosts = this._sharedService.GetLatestBlogPosts(this.CurrentPage);
             return PartialView("~/Views/Partials/Shared/LatestPosts.cshtml", latestBlogPosts);
+        }
+
+        public ActionResult RenderBlogPostsByCategory()
+        {
+            var posts = this._sharedService.GetBlogPostsByCategory(this.CurrentPage);
+            return PartialView("~/Views/Partials/Shared/PostsByCategory.cshtml", posts);
         }
 
         public ActionResult RenderFooter()

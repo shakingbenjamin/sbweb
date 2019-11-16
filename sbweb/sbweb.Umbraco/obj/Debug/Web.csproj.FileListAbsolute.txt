@@ -237,4 +237,3 @@ C:\LocalGit\sbweb\sbweb\sbweb.Umbraco\bin\zh-Hant\Microsoft.CodeAnalysis.CSharp.
 C:\LocalGit\sbweb\sbweb\sbweb.Umbraco\obj\Debug\Web.csproj.CopyComplete
 C:\LocalGit\sbweb\sbweb\sbweb.Umbraco\obj\Debug\sbweb.Umbraco.dll
 C:\LocalGit\sbweb\sbweb\sbweb.Umbraco\obj\Debug\sbweb.Umbraco.pdb
-C:\LocalGit\sbweb\sbweb\sbweb.Umbraco\obj\Debug\Web.csprojAssemblyReference.cache

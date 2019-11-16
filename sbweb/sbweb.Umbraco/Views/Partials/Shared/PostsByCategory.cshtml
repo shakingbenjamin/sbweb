@@ -1,0 +1,24 @@
+﻿@model  List<sbweb.Umbraco.Models.ViewModels.ArticleViewModel>
+
+<!-- all posts posts -->
+<section class="latest-posts">
+    <div class="container">
+        <div class="row">
+            @foreach (var a in Model)
+            {
+                <div class="post col-md-4">
+                    <div class="post-thumbnail"><a href="@a.ArticleUrl"><img src="@a.Image" alt="..." class="img-fluid"></a></div>
+                    <div class="post-details">
+                        <div class="post-meta d-flex justify-content-between">
+                            <div class="date">@a.PublishedDate</div>
+                            <div class="category"><a href="@a.CategoryUrl">@a.Category</a></div>
+                        </div><a href="@a.ArticleUrl">
+                            <h3 class="h4">@a.Header</h3>
+                        </a>
+                        <p class="text-muted">@a.ShortDescription</p>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>

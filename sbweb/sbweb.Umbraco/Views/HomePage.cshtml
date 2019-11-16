@@ -3,13 +3,16 @@
 @{
     Layout = "Layout.cshtml";
 }
-<!-- latest blog posts -->
-<section class="latest-posts">
+<section class="intro">
     <div class="container">
-        <header>
-            <h2>Latest from the blog</h2>
-            <p class="text-big">Most recent posts from across the blogs.</p>
-        </header>
-        @{ Html.RenderAction("RenderLatestPosts", "SharedSurface");}
+        <div class="row">
+            <div class="col-lg-8">
+                <h2 class="h3">@Model.IntroductionHeader</h2>
+                <p class="text-big">
+                    @Model.Introduction
+                </p>
+            </div>
+        </div>
     </div>
 </section>
+@{ Html.RenderAction("RenderLatestPosts", "SharedSurface");}

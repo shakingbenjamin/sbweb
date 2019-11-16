@@ -53,6 +53,27 @@ namespace Web.Models.ContentModels
 		public string Introduction => this.Value<string>("introduction");
 
 		///<summary>
+		/// Introduction header: The introduction header.
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
+		[ImplementPropertyType("introductionHeader")]
+		public string IntroductionHeader => this.Value<string>("introductionHeader");
+
+		///<summary>
+		/// Latest blog header: The header for the latest blog.
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
+		[ImplementPropertyType("latestBlogHeader")]
+		public string LatestBlogHeader => this.Value<string>("latestBlogHeader");
+
+		///<summary>
+		/// Latest blog introduction: The introduction for the latest blog posts.
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
+		[ImplementPropertyType("latestBlogIntroduction")]
+		public string LatestBlogIntroduction => this.Value<string>("latestBlogIntroduction");
+
+		///<summary>
 		/// Hero image: Apply the hero banner image for the page.
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]

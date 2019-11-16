@@ -1,4 +1,4 @@
-﻿@model  List<sbweb.Umbraco.Models.ViewModels.ArticleViewModel>
+﻿@model  sbweb.Umbraco.Models.ViewModels.LatestBlogViewModel
 
 
 @*<section class="featured-posts no-padding-top">
@@ -35,21 +35,33 @@
         </div>
     </section>*@
 
+<!-- latest blog posts -->
+<section class="latest-posts">
+    <div class="container">
+        @if (!string.IsNullOrEmpty(Model.Header))
+        {
+            <header>
+                <h2>@Model.Header</h2>
+                <p class="text-big">@Model.Introduction</p>
+            </header>
+        }
 
-<div class="row">
-    @foreach (var a in Model)
-    {
-        <div class="post col-md-4">
-            <div class="post-thumbnail"><a href="@a.ArticleUrl"><img src="@a.Image" alt="..." class="img-fluid"></a></div>
-            <div class="post-details">
-                <div class="post-meta d-flex justify-content-between">
-                    <div class="date">@a.PublishedDate</div>
-                    <div class="category"><a href="@a.CategoryUrl">@a.Category</a></div>
-                </div><a href="@a.ArticleUrl">
-                    <h3 class="h4">@a.Header</h3>
-                </a>
-                <p class="text-muted">@a.ShortDescription</p>
-            </div>
+        <div class="row">
+            @foreach (var a in Model.Articles)
+            {
+                <div class="post col-md-4">
+                    <div class="post-thumbnail"><a href="@a.ArticleUrl"><img src="@a.Image" alt="..." class="img-fluid"></a></div>
+                    <div class="post-details">
+                        <div class="post-meta d-flex justify-content-between">
+                            <div class="date">@a.PublishedDate</div>
+                            <div class="category"><a href="@a.CategoryUrl">@a.Category</a></div>
+                        </div><a href="@a.ArticleUrl">
+                            <h3 class="h4">@a.Header</h3>
+                        </a>
+                        <p class="text-muted">@a.ShortDescription</p>
+                    </div>
+                </div>
+            }
         </div>
-    }
-</div>
+    </div>
+</section>
